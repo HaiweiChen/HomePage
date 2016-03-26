@@ -105,12 +105,12 @@ a,a:link,a:visited,a:hover,a:active{
   background-size: contain;
 }
 .Home a:hover{
-
+transform:rotateY(360deg);
 }
 .Home .LOGO2{
   background: url(../img/photo.jpg) no-repeat #fff;
   background-size: contain;
-
+  ransform:rotateY(0deg);
 }
 /*微信旋转图*/
 .WeChat{
