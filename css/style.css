@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-*{margin:0;padding:0;list-style-type:none;margin: auto;font-size:14px; font-family:"微软雅黑","arial"; outline: none; color:#333;}
+*{margin:auto;padding:0;list-style-type:none;font-size:14px; font-family:"微软雅黑","arial"; outline: none; color:#333;}
 a,img{
   border:0;
    -webkit-tap-highlight-color:rgba(255,0,0,0);
@@ -16,13 +16,15 @@ body{
   background: #90B44B;
   transition: background 2s ease-in;
 }
-#gloss{
+#gloss,#bgWrap,.menu{
   position: fixed;
+  top:0;
+}
+#gloss{
   width: 100%;
   background: url(../img/gloss.png) repeat-x;
 }
 #bgWrap{
-  position: fixed;
   width: 100%;
   height: 100%;
   background-image: url(../img/texture.png);
@@ -33,9 +35,7 @@ a,a:link,a:visited,a:hover,a:active{
   text-decoration: none;
 }
 .menu{
-  position: fixed;
   z-index: 99;
-
 }
 .menu a{
   float: left;
@@ -68,6 +68,21 @@ a,a:link,a:visited,a:hover,a:active{
   position: absolute;
   bottom:30%;
 }
+.wrapper{
+  width: 96%;
+  margin-top: 100px;
+}
+.LOGO-wrapper2{
+}
+.Social{
+  width: 80%;
+  display: none;
+}
+.block{
+  width: 210px;
+  margin: 37px;
+  float: left;
+}
 .LOGO,.LOGO-box,.LOGO2{
   width: 200px;
   height: 200px;
@@ -97,9 +112,6 @@ a,a:link,a:visited,a:hover,a:active{
   transform:rotate(0deg);
 }
 /*主页旋转图*/
-.Home{
-  display: block;
-}
 .Home .LOGO{
   background: url(../img/LOGO.png) no-repeat #fff;
   background-size: contain;
@@ -113,9 +125,6 @@ transform:rotateY(360deg);
   ransform:rotateY(0deg);
 }
 /*微信旋转图*/
-.WeChat{
-  display:none;
-}
 .WeChat .LOGO{
   background: url(../img/WeChat.png) no-repeat #fff center;
   background-size: contain;
@@ -125,9 +134,7 @@ transform:rotateY(360deg);
   background-size: 80%;
 }
 /*GitHub旋转图*/
-.GitHub{
-  display:none;
-}
+
 .GitHub .LOGO{
   background: url(../img/GitHub.jpg) no-repeat #fff center;
   background-size: cover;
@@ -137,9 +144,6 @@ transform:rotateY(360deg);
   background-size: 80%;
 }
 /*微博旋转图*/
-.WeiBo{
-  display:none;
-}
 .WeiBo .LOGO{
   background: url(../img/Weibo.jpg) no-repeat #fff center;
   background-size: cover;
@@ -149,9 +153,6 @@ transform:rotateY(360deg);
   background-size: 80%;
 }
 /*知乎旋转图*/
-.ZhiHu{
-  display:none;
-}
 .ZhiHu .LOGO{
   background: url(../img/ZhiHu.jpg) no-repeat #fff center;
   background-size: cover;
@@ -160,16 +161,13 @@ transform:rotateY(360deg);
   background: url(../img/ZhiHu.png) no-repeat #fff center;
   background-size: 80%;
 }
-/*知乎旋转图*/
-.E-mail{
-  display:none;
-}
+/*邮件旋转图*/
 .E-mail .LOGO{
   background: url(../img/E-mail.jpg) no-repeat #fff center;
   background-size: cover;
 }
 .E-mail .LOGO2{
-  background: url(../img/ZhiHu.png) no-repeat #fff center;
+  background: url(../img/E-mail.png) no-repeat #fff center;
   background-size: 80%;
 }
 @keyframes LOGO-hover

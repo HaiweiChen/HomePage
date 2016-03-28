@@ -2,12 +2,12 @@
 var body=$('body');
 $('.menu a').click(function(){
 	$(this).addClass('menu-on').siblings().removeClass('menu-on');
-	$('.LOGO-wrapper').hide()
+	$('.wrapper').hide()
 	var text = $(this).text();
 	$('.'+text).show();
 	if(text=="Home"){
 		body.css('background','#90B44B');
-	}else if(text=='WeChat'){
+	}else if(text=='Social'){
 		body.css('background','#DDD23B');
 	}else if(text=='GitHub'){
 		body.css('background','#81C7D4');
