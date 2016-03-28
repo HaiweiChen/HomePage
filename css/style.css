@@ -88,6 +88,9 @@ a,a:link,a:visited,a:hover,a:active{
   height: 200px;
   border-radius: 50%;
 }
+.wrapper .LOGO,.wrapper .LOGO-box, .wrapper .LOGO2{
+  border-radius:20px;
+}
 .LOGO-box{
   padding: 5px;
   animation: LOGO-hover 5s;
@@ -98,7 +101,7 @@ a,a:link,a:visited,a:hover,a:active{
   width: 200px;
   height: 201px;
   display: block;
-  position: relative;;
+  position: relative;
   margin-top:-201px;
   z-index: 999;
   opacity: 0;
@@ -106,10 +109,10 @@ a,a:link,a:visited,a:hover,a:active{
 .LOGO-box a:hover{
   opacity: 1;
   transition: all 1s ease-out;
-  transform:rotate(360deg);
+  transform:rotateY(360deg);
 }
 .LOGO-box a{
-  transform:rotate(0deg);
+  transform:rotateY(0deg);
 }
 /*主页旋转图*/
 .Home .LOGO{
@@ -117,12 +120,12 @@ a,a:link,a:visited,a:hover,a:active{
   background-size: contain;
 }
 .Home a:hover{
-transform:rotateY(360deg);
+transform:rotate(360deg);
 }
 .Home .LOGO2{
   background: url(../img/photo.jpg) no-repeat #fff;
   background-size: contain;
-  ransform:rotateY(0deg);
+  ransform:rotate(0deg);
 }
 /*微信旋转图*/
 .WeChat .LOGO{
@@ -131,17 +134,17 @@ transform:rotateY(360deg);
 }
 .WeChat .LOGO2{
   background: url(../img/WeChat.jpg) no-repeat #fff center;
-  background-size: 80%;
+  background-size:contain;
 }
 /*GitHub旋转图*/
 
 .GitHub .LOGO{
   background: url(../img/GitHub.jpg) no-repeat #fff center;
-  background-size: cover;
+  background-size: contain;
 }
 .GitHub .LOGO2{
   background: url(../img/GitHub.png) no-repeat #fff center;
-  background-size: 80%;
+  background-size:contain;
 }
 /*微博旋转图*/
 .WeiBo .LOGO{
@@ -150,7 +153,7 @@ transform:rotateY(360deg);
 }
 .WeiBo .LOGO2{
   background: url(../img/WeiBo.png) no-repeat #fff center;
-  background-size: 80%;
+  background-size:contain;
 }
 /*知乎旋转图*/
 .ZhiHu .LOGO{
@@ -159,7 +162,7 @@ transform:rotateY(360deg);
 }
 .ZhiHu .LOGO2{
   background: url(../img/ZhiHu.png) no-repeat #fff center;
-  background-size: 80%;
+  background-size:contain;
 }
 /*邮件旋转图*/
 .E-mail .LOGO{
@@ -168,7 +171,7 @@ transform:rotateY(360deg);
 }
 .E-mail .LOGO2{
   background: url(../img/E-mail.png) no-repeat #fff center;
-  background-size: 80%;
+  background-size: contain;
 }
 @keyframes LOGO-hover
 {

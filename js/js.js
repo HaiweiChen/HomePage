@@ -2,7 +2,7 @@
 var body=$('body');
 $('.menu a').click(function(){
 	$(this).addClass('menu-on').siblings().removeClass('menu-on');
-	$('.wrapper').hide()
+	$('.wrapper,.LOGO-wrapper').hide()
 	var text = $(this).text();
 	$('.'+text).show();
 	if(text=="Home"){
