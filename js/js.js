@@ -11,11 +11,15 @@ $('.menu a').click(function(){
 		body.css('background','#DDD23B');
 	}else if(text=='GitHub'){
 		body.css('background','#81C7D4');
-	}else if(text=='WeiBo'){
-		body.css('background','#ddd');
+	}else if(text=='Personal'){
+		body.css('background','#00AA90');
 	}else if(text=='ZhiHu'){
 		body.css('background','#2EA9DF');
 	}else if(text=="E-mail"){
 		body.css('background','#F19483');
 	}
+});
+$('.rel-strip').each(function(){
+	var long=$(this).parents('li').find('input').attr('value');
+	$(this).css('width',long);
 });
