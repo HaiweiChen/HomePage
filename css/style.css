@@ -193,9 +193,14 @@ transform:rotate(360deg);
   overflow: hidden;
   float:left;
   padding: 0;
+
 }
 .Record .LOGO-box img{
   width: 100%;
+}
+.Home .slogen{
+  font-size: 16px;
+  line-height: 25px;
 }
 .name{
   line-height: 60px;
@@ -258,6 +263,20 @@ transform:rotate(360deg);
 }
 .slogen:hover{
   color:#fff;
+}
+.position{
+  font-size:25px;
+  margin-top: 20px;
+  color: #00AA90;
+  text-shadow: 1px 1px 1px #000;
+  opacity: 0.5;
+  font-weight: 800;
+}
+.position:hover{
+  color:#fff;
+  text-shadow:none;
+  opacity: 1;
+  transition: opacity 1s ease-out;
 }
 @keyframes LOGO-hover
 {

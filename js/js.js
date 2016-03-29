@@ -25,11 +25,12 @@ $('.rel-strip').each(function(){
 	$(this).css('width',long);
 });
 //进度条悬停变色
+$('.skill li').each(function(){
+	$(this).find('a,.rel-strip').css('opacity','0.8');
+});
 $('.skill li').mouseover(function(){
-	$(this).find('a').css('color','#f7e811');
-	$(this).find('.rel-strip').css('background','#f7e811');
+	$(this).find('a,.rel-strip').css('opacity','1');
 });
 $('.skill li').mouseout(function(){
-	$(this).find('a').css('color','#FFF');
-	$(this).find('.rel-strip').css('background','#FFF');
+	$(this).find('a,.rel-strip').css('opacity','0.8');
 });
