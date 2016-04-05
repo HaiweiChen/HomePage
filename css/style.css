@@ -6,7 +6,7 @@ a,img{
    -webkit-tap-highlight-color:rgba(255,0,0,0);
 }
 p{
-  padding-top: 20px;
+  padding-top: 10px;
   font-size: 18px;
   text-align: center;
 }
@@ -191,7 +191,6 @@ transform:rotate(360deg);
   border-radius: 50%;
   background-position: 0px -40px;
   overflow: hidden;
-  float:left;
   padding: 0;
 
 }
@@ -208,11 +207,10 @@ transform:rotate(360deg);
   font-weight: 800;
   color:#fff;
   display: block;
-  float: left;
   width:100%;
-  padding-bottom: 20px;
-  border-bottom: 5px solid #fff;
-  margin-bottom: 10px;
+}
+.line{
+  border-bottom: 2px dashed #fff;
 }
 .LOGO-text{
   display: block;
@@ -221,7 +219,7 @@ transform:rotate(360deg);
 .skill{
   width: 100%;
   margin-top: 20px;
-  background: rgba(168,216,185,.5);
+  background: rgba(255,255,255,.3);
 }
 .skill>li{
   height: 20px;
@@ -241,7 +239,7 @@ transform:rotate(360deg);
   float:left;
   display: block;
   margin: 7px 7%;
-  background: #00AA90;
+  background: #0089A7;
   border-radius: 5px;
   overflow: hidden;
   margin-right: 8%;
@@ -261,16 +259,8 @@ transform:rotate(360deg);
   text-align: center;
   margin-bottom: 10px;
 }
-.slogen:hover{
-  color:#fff;
-}
 .position{
-  font-size:25px;
-  margin-top: 20px;
-  color: #00AA90;
-  text-shadow: 1px 1px 1px #000;
-  opacity: 0.5;
-  font-weight: 800;
+  margin-top: 40px;
 }
 .position:hover{
   color:#fff;
