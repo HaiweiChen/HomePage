@@ -3,9 +3,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
-
+    <script type="text/javascript" src="js/swiper-3.3.1.jquery.min.js"></script>
     <title>陈海微·HomePage</title>
   </head>
   <body>
@@ -75,7 +76,15 @@
             <input type="hidden" value="50%">
           </li>
         </div>
-    </div>
+      </div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background:#fff;">slider1</div>
+          <div class="swiper-slide" style="background:#000;">slider2</div>
+          <div class="swiper-slide" style="background:#666;">slider3</div>
+        </div>
+      </div>
+
     </div>
     <div class="wrapper Social clr">
       <div class="block WeChat">
@@ -114,6 +123,16 @@
         <p>给我发邮件</p>
       </div>
     </div>
+
+
+    <script>
+      var mySwiper = new Swiper('.swiper-container', {
+  	     autoplay: 5000,//可选选项，自动滑动
+         direction : 'vertical',
+         paginationClickable: true,
+      });
+    </script>
     <script type="text/javascript" src="js/js.js"></script>
+
   </body>
 </html>

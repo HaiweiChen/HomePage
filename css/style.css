@@ -71,7 +71,7 @@ a,a:link,a:visited,a:hover,a:active{
 }
 .wrapper{
   width: 96%;
-  margin-top: 100px;
+  margin-top: 130px;
 }
 .LOGO-wrapper2{
 }
@@ -84,6 +84,7 @@ a,a:link,a:visited,a:hover,a:active{
   margin: 37px;
   float: left;
 }
+
 .LOGO,.LOGO-box,.LOGO2{
   width: 200px;
   height: 200px;
@@ -182,7 +183,7 @@ transform:rotate(360deg);
 .Record .block{
   height: auto;
   margin: 0;
-  width: 300px;
+  width: 25%;
 }
 .Record .LOGO-box{
   width: 150px;
@@ -267,6 +268,24 @@ transform:rotate(360deg);
   text-shadow:none;
   opacity: 1;
   transition: opacity 1s ease-out;
+}
+.right-block{
+  width: 66%;
+  height: 100%;
+  margin: 0 2%;
+  float: left;
+  overflow: hidden;
+}
+.swiper-container{
+  width: 100%;
+  height: 580px;
+}
+.weiper-wrapper{
+  height: 580px;
+}
+.swiper-container-vertical{
+  width: 70%;
+  height: 580px;
 }
 @keyframes LOGO-hover
 {
