@@ -2,13 +2,13 @@
 .loader {
 
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     position: relative;
-    margin: 10px;
+    margin: 20px;
 }
 
-.loader:before {
+/*.loader:before {
     content: "";
     display: block;
     position: absolute;
@@ -45,7 +45,7 @@
     animation-fill-mode: forwards;
 
     z-index: 1;
-}
+}*/
 .loader a {
     position: absolute;
     display: inline-block;
@@ -139,14 +139,14 @@
 }
 
 .loader4:after{
-    content: "";
+    /*content: "";
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1);
     text-align: center;
-    line-height: 40px;
+    line-height: 40px;*/
 
     -webkit-animation-name: scale;
     -moz-animation-name: scale;
