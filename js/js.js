@@ -34,3 +34,26 @@ $('.skill li').mouseover(function(){
 $('.skill li').mouseout(function(){
 	$(this).find('a,.rel-strip').css('opacity','0.8');
 });
+//canvas绘制小三角形
+$(function(){
+	var cxt =document.getElementById('triangle1').getContext("2d");//定义绘图环境
+	//cxt.beginPath();
+	cxt.fillStyle = '#fff';//定义填充颜色
+	cxt.strokeStyle="#fff";/*设置边框*/
+	cxt.lineWidth=1;/*边框的宽度*/
+	cxt.moveTo(150,0);
+	cxt.lineTo(135,20);
+	cxt.lineTo(165,20);
+	cxt.stroke();
+	cxt.fill();
+});
+//专业技能按钮hover事件
+$('.mini-block a').eq(0).mouseover(function(){
+	$('.show-block').animate({left:'1.5%'},'0');
+});
+$('.mini-block a').eq(1).mouseover(function(){
+	$('.show-block').animate({left:'35%'},'0');
+});
+$('.mini-block a').eq(2).mouseover(function(){
+	$('.show-block').animate({left:'67.5%'},'0');
+});
