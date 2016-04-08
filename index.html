@@ -85,29 +85,49 @@
       <div class="right-block">
           <div class="swiper-wrapper">
             <div class="swiper-slide skilled">
-              <p>专业技能</p>
+              <p class="banner-title"><a>专业技能</a></p>
+              <p class="text">博观而约取，厚积而薄发</p>
               <div class="title-block clr">
                 <div class="mini-block MT">
-                  <a href="javascript:void(0);">
-                    <img src="img/HTML.png">
-                    <span class="title">HTML</span>
+                  <a href="javascript:void(0);" alt="HTML">
+                    <img src="img/html.png">
+                    <span class="title">页面重构</span>
+                  </a>
+                </div>
+                <div class="mini-block big js">
+                  <a  href="javascript:void(0);" alt="script">
+                    <img src="img/script.png">
+                    <span class="title">页面交互</span>
                   </a>
                 </div>
                 <div class="mini-block">
-                  <a href="javascript:void(0);">
-                    <img src="img/CSS.png">
-                    <span class="title">CSS</span>
-                  </a>
-                </div>
-                <div class="mini-block">
-                  <a href="javascript:void(0);">
-                    <img src="img/JS.png">
-                    <span class="title">JavaScript</span>
+                  <a href="javascript:void(0);" alt="other">
+                    <img src="img/style.png">
+                    <span class="title">其他</span>
                   </a>
                 </div>
               </div>
               <div class="show-block">
-                <canvas id="triangle1"></canvas>
+                <canvas id="triangle"></canvas>
+                <ul id="HTML">
+                  <li>熟练运用HTML、CSS</li>
+                  <li>精通移动端UI界面的布局及实现，能实现较复杂的UI界面</li>
+                  <li>熟悉W3C标准，可独立开发符合W3C标准的页面</li>
+                  <li>掌握HTML5、CSS3，如canvers、语义标签等新特性</li>
+                  <li>熟练运用Bootstrap</li>
+                </ul>
+                <ul id="script">
+                  <li>具有良好的编码风格,逻辑思维能力强</li>
+                  <li>熟练运用jQuery库，zepto.js、swipe.js等</li>
+                  <li>掌握ajax的运作原理及json数据结构</li>
+                  <li>掌握JavaScript面向HTML DOM的编程</li>
+                  <li>正在不断学习原生JavaScript，了解js闭包等</li>
+                </ul>
+                <ul id="other">
+                  <li>注重兼容性，擅长移动端浏览器兼容</li>
+                  <li>注重页面性能优化</li>
+                  <li>UI设计</li>
+                </ul>
               </div>
             </div>
             <div class="swiper-slide">slider2</div>
@@ -166,13 +186,16 @@
         mousewheelControl : true,
         observer:true,//修改swiper自己或子元素时，自动初始化swiper
         observeParents:true,//修改swiper的父元素时，自动初始化swiper
+        //切换开始时执行
         onTransitionStart: function(swiper){
           if($('.skilled').hasClass('swiper-slide-active')){
+            $('.show-block').css('left','35%');
+            $('.js').addClass('big').siblings().removeClass('big');
+            $('.show-block ul').hide();
+            $('#script').show();
             $('.swiper-wrapper').find('.skilled div').show();
-            console.log('显示');
           }else{
             $('.swiper-wrapper').find('.skilled div').hide();
-            console.log('隐藏');
           }
         }
       });
