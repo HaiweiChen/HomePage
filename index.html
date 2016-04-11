@@ -15,7 +15,7 @@
     </div>
     <ul class="menu clr">
       <a class="menu-on" href="javascript:void(0)">Home</a>
-      <a fref="javascript:void(0)">Record</a>
+      <a href="javascript:void(0)">Record</a>
       <a href="javascript:void(0)">Social</a>
       <!--<a href="javascript:void(0)">GitHub</a>
       <a href="javascript:void(0)">WeiBo</a>
@@ -130,7 +130,39 @@
                 </ul>
               </div>
             </div>
-            <div class="swiper-slide">slider2</div>
+            <div class="swiper-slide  Experience">
+              <p class="banner-title"><a>项目经验</a></p>
+              <p class="text">不积跬步，无以至千里</p>
+              <div class="swiper-wrapper">
+                <!-- 个人经历幻灯片1 -->
+                <div class="swiper-slide stop-swiping">
+                  <div class="Exp-content">
+                    <p class="Exp-title">小马哥移动商城</p>
+                    <p class="Exp-subhead">基于微信公众号开发的移动商城项目，用户可进行商品浏览、加入购物车、下单、用户管理等操作。</p>
+                    <p class="ul-subhead">相关技术</p>
+                    <ul class="clr">
+                      <li></li>
+                      <li></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- 个人经历幻灯片2 -->
+                <div class="swiper-slide stop-swiping">
+                  <div class="Exp-content">page2page2page2page2</div>
+                </div>
+                <!-- 个人经历幻灯片3 -->
+                <div class="swiper-slide stop-swiping">
+                  <div class="Exp-content">page3page3page3page3</div>
+                </div>
+                <!-- 个人经历幻灯片4 -->
+                <div class="swiper-slide stop-swiping">
+                  <div class="Exp-content">page4page4page4page4</div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
             <div class="swiper-slide">slider3</div>
           </div>
           <div class="swiper-pagination"></div>
@@ -179,7 +211,6 @@
     <script>
       var mySwiper = new Swiper('.right-block', {
         direction : 'vertical',
-        paginationClickable: true,
         loop: false,
         effect : 'flip',
         pagination: '.swiper-pagination',
@@ -199,7 +230,16 @@
           }
         }
       });
-
+      var mySwiper = new Swiper('.Experience', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        prevButton:'.swiper-button-prev',
+        nextButton:'.swiper-button-next',
+        observer:true,//修改swiper自己或子元素时，自动初始化swiper
+        observeParents:true,//修改swiper的父元素时，自动初始化swiper
+        noSwiping : true,
+        noSwipingClass : 'stop-swiping',
+      })
     </script>
   </body>
 </html>

@@ -178,17 +178,19 @@ transform:rotate(360deg);
 }
 .Record {
   display: none;
-  width: 90%;
+  width: 95%;
+  margin-left:5%;
+  margin-right: 0;
 }
 .Record .block{
   height: auto;
   margin: 0;
-  width: 25%;margin-top: 20px;
+  width: 20%;margin-top: 20px;
 }
 .Record .LOGO-box{
   width: 150px;
   height: 150px;
-  margin: 0 75px;
+  margin: 0 55px;
   border-radius: 50%;
   background-position: 0px -40px;
   overflow: hidden;
@@ -226,6 +228,11 @@ transform:rotate(360deg);
   height: 20px;
   line-height: 20px;
   margin: 10px 0;
+  opacity: 0.7;
+}
+.skill>li:hover{
+  opacity: 1;
+  transition: opacity 0s;
 }
 .skill>li>a{
   float: left;
@@ -271,7 +278,7 @@ transform:rotate(360deg);
   transition: opacity 1s ease-out;
 }
 .right-block{
-  width: 73%;
+  width: 78%;
   height: 580px;
   margin-left:2%;
   float: right;
@@ -280,13 +287,13 @@ transform:rotate(360deg);
 .swiper-container{
   height: 100%;
 }
-.skilled>.banner-title a{
+.banner-title a{
   padding: 0 30px;
   font-size: 30px;
   font-weight: bold;
   color:#151515;
 }
-.skilled>.text{
+.text{
   font-size: 14px;
   font-weight:normal; !important;
   margin-bottom: 3%;
@@ -330,7 +337,7 @@ transform:rotate(360deg);
 }
 .show-block{
   width: 26%;
-  height: 55%;
+  height: 54%;
   background: rgba(255,255,255,1);
   margin-top: 30px;
   position: absolute;
@@ -363,6 +370,81 @@ transform:rotate(360deg);
   width: 100%;
   height:25px;
   margin-top: -12px;
+}
+.Experience{
+  overflow: hidden;
+  width: 80% !important;
+}
+.Experience .swiper-wrapper{
+  height: 80%;
+  float: left;
+  bottom:0;
+}
+/*个人经历按钮样式*/
+.Experience .swiper-pagination-bullet{
+  width: 60px;
+  height: 60px;
+  margin: 0 20px !important;
+  background: url('../img/planet.png') no-repeat !important;
+  background-size:250px !important;
+  background-position: ;
+}
+.swiper-button-next,.swiper-button-prev{
+  width: 60px !important;
+  height: 60px !important;
+  background-image:url(../img/icon-1460347264501.png) !important;
+  background-size: contain !important;
+  border-radius: 50%;
+  transition: all 1s ease-out;
+  opacity: 0.3;
+}
+.swiper-button-next{
+  transform:rotate(-90deg);
+}
+.swiper-button-prev{
+  transform:rotate(90deg);
+}
+.swiper-button-prev:hover,.swiper-button-next:hover{
+  box-shadow: 0px 1px 1px rgba(0,0,0,.3);
+  opacity: 0.8;
+  transition: all 1s ease-out;
+}
+/*个人经历按钮样式*/
+.Experience .swiper-pagination{
+  bottom:30px;
+  /*border-top: 5px rgba(255,255,255,.2) dotted;*/
+  padding-top: 20px;
+}
+.Exp-content{
+  width: 80%;
+  height: 60%;
+  color:#000;
+  margin:5% auto;
+  padding:2% 10%;
+  background: rgba(0,0,0,.1);
+}
+.Exp-content p{
+  width: 70%;
+  float: left;
+  clear: both;
+}
+.Exp-title{
+  font-size:20px;
+  text-align: left;
+  font-weight: bold;
+}
+.Exp-subhead{
+  font-size:14px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.ul-subhead{
+  font-size: 14px;
+  text-align: left;
+}
+.Experience li{
+  list-style-type: disc;
+  margin-left: 20px;
 }
 @keyframes LOGO-hover
 {

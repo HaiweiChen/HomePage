@@ -24,16 +24,6 @@ $('.rel-strip').each(function(){
 	var long=$(this).parents('li').find('input').attr('value');
 	$(this).css('width',long);
 });
-//进度条悬停变色
-$('.skill li').each(function(){
-	$(this).find('a,.rel-strip').css('opacity','0.8');
-});
-$('.skill li').mouseover(function(){
-	$(this).find('a,.rel-strip').css('opacity','1');
-});
-$('.skill li').mouseout(function(){
-	$(this).find('a,.rel-strip').css('opacity','0.8');
-});
 //canvas绘制小三角形
 $(function(){
 	var cxt =document.getElementById('triangle').getContext("2d");//定义绘图环境
@@ -49,7 +39,6 @@ $(function(){
 });
 //专业技能按钮hover事件
 $('.mini-block a').click(function(){
-
 	var alt = $(this).attr('alt');
 	if(alt == 'HTML'){
 		$('.show-block').animate({left:'1.5%'},'0');
