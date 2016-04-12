@@ -19,6 +19,58 @@ $('.menu a').click(function(){
 		body.css('background','#F19483');
 	}
 });
+//简历右侧
+var mySwiper = new Swiper('.right-block', {
+	direction : 'vertical',
+	loop: false,
+	effect : 'flip',
+	pagination: '.swiper-pagination',
+	mousewheelControl : true,
+	observer:true,//修改swiper自己或子元素时，自动初始化swiper
+	observeParents:true,//修改swiper的父元素时，自动初始化swiper
+	//切换开始时执行
+	onTransitionStart: function(swiper){
+		if($('.skilled').hasClass('swiper-slide-active')){
+			$('.show-block').css('left','35%');
+			$('.js').addClass('big').siblings().removeClass('big');
+			$('.show-block ul').hide();
+			$('#script').show();
+			$('.swiper-wrapper').find('.skilled div').show();
+		}else{
+			$('.swiper-wrapper').find('.skilled div').hide();
+		}
+	}
+});
+//项目经验
+var Swiper = new Swiper('.Experience', {
+	// pagination: '.swiper-pagination',
+	// paginationClickable: true,
+	prevButton:'.swiper-button-prev',
+	nextButton:'.swiper-button-next',
+	observer:true,//修改swiper自己或子元素时，自动初始化swiper
+	observeParents:true,//修改swiper的父元素时，自动初始化swiper
+	noSwiping : true,
+	noSwipingClass : 'stop-swiping',
+	onSlideChangeStart: function(swiper){
+		var index=Swiper.activeIndex;
+		$('.Exp-btn li').eq(index).addClass('on-btn').siblings().removeClass('on-btn');
+	}
+});
+ $('.Exp-btn a').click(function(){
+	$(this).parent().addClass('on-btn').siblings().removeClass('on-btn');
+});
+$('#btn-1').click(function(){
+	Swiper.slideTo(0, 1000, false);
+});
+$('#btn-2').click(function(){
+	Swiper.slideTo(1, 1000, false);
+});
+$('#btn-3').click(function(){
+	Swiper.slideTo(2, 1000, false);
+});
+$('#btn-4').click(function(){
+	Swiper.slideTo(3, 1000, false);
+});
 //进度条
 $('.rel-strip').each(function(){
 	var long=$(this).parents('li').find('input').attr('value');

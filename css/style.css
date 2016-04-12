@@ -84,6 +84,8 @@ a,a:link,a:visited,a:hover,a:active{
   width: 210px;
   margin: 37px;
   float: left;
+  position: relative;
+  top:0;
 }
 
 .LOGO,.LOGO-box,.LOGO2{
@@ -186,17 +188,22 @@ transform:rotate(360deg);
 .Record .block{
   height: auto;
   margin: 0;
-  width: 20%;margin-top: 20px;
+  width: 20%;
+  /*margin-top: 20px;*/
 }
 .Record .LOGO-box{
   width: 150px;
   height: 150px;
-  margin: 0 55px;
+  /*margin: 0 55px;*/
   border-radius: 50%;
   background-position: 0px -40px;
   overflow: hidden;
   padding: 0;
-
+}
+.LOGO-big{
+  width: 200px !important;
+  height: 200px !important;
+  transition: all 1s ease-out;
 }
 .Record .LOGO-box img{
   width: 100%;
@@ -228,7 +235,7 @@ transform:rotate(360deg);
 .skill>li{
   height: 20px;
   line-height: 20px;
-  margin: 10px 0;
+  margin: 15px 0;
   opacity: 0.7;
 }
 .skill>li:hover{
@@ -266,10 +273,13 @@ transform:rotate(360deg);
 .slogen{
   font-size: 14px;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 10px
+}
+.block .slogen{
+  color:#fff;
 }
 .position{
-  margin-top: 40px;
+  margin-top: 20px;
   cursor: pointer;
 }
 .position:hover{
@@ -280,7 +290,7 @@ transform:rotate(360deg);
 }
 .right-block{
   width: 78%;
-  height: 580px;
+  max-height: 600px;
   margin-left:2%;
   float: right;
   overflow: hidden;
@@ -338,7 +348,7 @@ transform:rotate(360deg);
 }
 .show-block{
   width: 26%;
-  height: 54%;
+  height: 287px;
   background: rgba(255,255,255,1);
   margin-top: 30px;
   position: absolute;
@@ -382,14 +392,21 @@ transform:rotate(360deg);
   bottom:0;
 }
 /*个人经历按钮样式*/
-.Experience .swiper-pagination-bullet{
-  width: 60px;
-  height: 60px;
+
+/*.Experience .swiper-pagination-bullet{
+  width: 20px;
+  height: 20px;
   margin: 0 20px !important;
   background: url('../img/planet.png') no-repeat !important;
+  background: rgb(0, 137, 167);
+  border:1px solid #fff;
   background-size:250px !important;
   background-position: ;
+  bottom: -150px !important;
 }
+.Experience  .swiper-pagination-bullet-active{
+  background: #fff;
+}*/
 .swiper-button-next,.swiper-button-prev{
   width: 60px !important;
   height: 60px !important;
@@ -418,34 +435,69 @@ transform:rotate(360deg);
 }
 .Exp-content{
   width: 80%;
-  height: 60%;
+  height: 80%;
   color:#000;
-  margin:5% auto;
+  margin: auto;
   padding:2% 10%;
   background: rgba(0,0,0,.1);
 }
 .Exp-content p{
-  width: 70%;
+  width: 50%;
   float: left;
   clear: both;
 }
 .Exp-title{
-  font-size:20px;
+  font-size:22px;
   text-align: left;
   font-weight: bold;
+  color: #000;
 }
 .Exp-subhead{
   font-size:14px;
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .ul-subhead{
-  font-size: 14px;
+  font-size: 16px;
   text-align: left;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
-.Experience li{
+.Experience .point-ul li{
   list-style-type: disc;
+  margin: 5px;
+  color:#333;
   margin-left: 20px;
+}
+.Exp-btn{
+  position:absolute;
+  bottom:0;
+  width:40%;
+  height: auto;
+  margin:0 30%;
+  border-radius: 50%;
+}
+.btn-line{
+  width: 100%;
+  border-bottom: 2px solid #fff;
+  position: absolute;
+  bottom: 50%;
+  z-index: -1;
+}
+.Exp-btn li a{
+  height: 20px;
+  width: 20px;
+  display: block;
+  border: rgba(255,255,255,.5) 1px solid;
+  background: rgb(0, 137, 167);
+  border-radius: 50%;
+}
+.Exp-btn li{
+  width: 25%;
+  float: left;
+}
+.on-btn a{
+  background: #fff !important;
 }
 @keyframes LOGO-hover
 {
