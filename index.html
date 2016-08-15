@@ -23,14 +23,14 @@
       <a href="javascript:void(0)">DouBan</a>
       <a href="javascript:void(0)">E-mail</a>-->
     </ul>
-    <div class="LOGO-wrapper Home">
+    <div class="LOGO-wrapper Home wrapper-js">
       <div class="LOGO-box">
         <div class="LOGO"></div>
         <a href="javascript:void(0)" class="LOGO2"></a>
       </div>
       <p class="slogen">我托迦叶帮我问问佛，怎样可以“休恋逝水，苦海回身”。<br>他教我收余恨，免娇嗔，且自新，改性情。</p>
     </div>
-    <div class="wrapper Record clr">
+    <div class="wrapper Record clr  wrapper-js">
       <div class="block">
         <div class="LOGO-box">
           <img src="img/Personal.jpg">
@@ -63,7 +63,7 @@
           <li>
             <a>Bootstrap</a>
             <span><span class="rel-strip"></span></span>
-            <input type="hidden" value="70%">
+            <input type="hidden" value="30%">
           </li>
           <li>
             <a>jQuery</a>
@@ -79,6 +79,11 @@
             <a>Git</a>
             <span><span class="rel-strip"></span></span>
             <input type="hidden" value="50%">
+          </li>
+          <li>
+            <a>json</a>
+            <span><span class="rel-strip"></span></span>
+            <input type="hidden" value="90%">
           </li>
         </div>
       </div>
@@ -111,13 +116,14 @@
                 <canvas id="triangle"></canvas>
                 <ul id="HTML">
                   <li>熟练运用HTML、CSS</li>
+                  <li>HTML结构明确简洁</li>
                   <li>精通移动端UI界面的布局及实现，能实现较复杂的UI界面</li>
                   <li>熟悉W3C标准，可独立开发符合W3C标准的页面</li>
                   <li>掌握HTML5、CSS3，如canvers、语义标签等新特性</li>
-                  <li>熟练运用Bootstrap</li>
                 </ul>
                 <ul id="script">
                   <li>具有良好的编码风格,逻辑思维能力强</li>
+                  <li>熟练运用json数据交换，初步理解ajax</li>
                   <li>熟悉jQuery/Zepto等基础类库，能熟练的基于jQuery/Zepto封装控件；</li>
                   <li>掌握JavaScript面向HTML DOM的编程</li>
                   <li>正在不断学习原生JavaScript，了解js闭包等</li>
@@ -126,7 +132,8 @@
                   <li>注重兼容性，擅长移动端浏览器兼容</li>
                   <li>了解HTTP协议以及Ajax相关技术原理</li>
                   <li>注重页面性能优化</li>
-                  <li>熟练使用git进行代码管理</li>
+                  <li>熟练使用SVN及git进行代码管理</li>
+                  <li>熟练运用json数据交换</li>
                 </ul>
               </div>
             </div>
@@ -155,18 +162,16 @@
                 <!-- 项目经验幻灯片2 -->
                 <div class="swiper-slide stop-swiping">
                   <div class="Exp-content xiaomage">
-                    <p class="Exp-title">小马哥未来商圈</p>
-                    <p class="Exp-subhead">分为移动端聚合页和PC端商圈管理系统两个部分。小马哥未来商圈管理系统，可查看运营数据、设置商圈聚合页及对该商圈内的店铺进行一系列管理</p>
+                    <p class="Exp-title">小马哥管理后台</p>
+                    <p class="Exp-subhead">公司管理后台，用于公司管理、运营数据查看、客服管理等。采用左侧纵向导航条右侧iform布局方式.过程中遇到父窗口子窗口的封装JS互相调用以及PC终端的分辨率不统一性宽度需要自适应的问题，最后得到解决。</p>
                     <p class="ul-subhead">项目职责</p>
                     <ul class="point-ul clr">
-                      <li>聚合页H5</li>
                       <li>管理界面的页面布局</li>
                       <li>后期维护</li>
                     </ul>
                     <p class="ul-subhead">相关技术</p>
                     <ul class="point-ul clr">
-                      <li>Swiper.js</li>
-                      <li>zepto.js</li>
+                      <li>iform布局</li>
                     </ul>
                   </div>
                 </div>
@@ -184,10 +189,28 @@
                     <ul class="point-ul clr">
                       <li>Swiper.js</li>
                       <li>zepto.js</li>
+                      <li></li>
                     </ul>
                   </div>
                 </div>
-                <!-- 项目经验幻灯片4 -->
+                <div class="swiper-slide stop-swiping">
+                  <div class="Exp-content laobanlai-manage">
+                    <p class="Exp-title">老板来商户后台</p>
+                    <p class="Exp-subhead">老板来商户管理系统，商户可在后台添加删除上下线产品，并对APP广告卡券进行管理</p>
+                    <p class="ul-subhead">项目职责</p>
+                    <ul class="point-ul clr">
+                      <li>UI设计</li>
+                      <li>静态页面制作</li>
+                    </ul>
+                    <p class="ul-subhead">相关技术</p>
+                    <ul class="point-ul clr">
+                      <li>iform布局</li>
+                      <li>宽度自适应</li>
+                      <li></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- 项目经验幻灯片未完待续页 -->
                 <div class="swiper-slide stop-swiping">
                   <div class="continued">
                     <div id="sprite"></div>
@@ -205,10 +228,13 @@
                     <a href="javascript:void(0)" id="btn-2" title="2015.12" alt="1"></a>
                   </li>
                   <li>
-                    <a href="javascript:void(0)" id="btn-3" title="2016.2" alt="2"></a>
+                    <a href="javascript:void(0)" id="btn-3" title="2016.2-2016.8" alt="2"></a>
                   </li>
                   <li>
-                    <a href="javascript:void(0)" id="btn-4" title="未完待续"  alt="3"></a>
+                    <a href="javascript:void(0)" id="btn-4" title="2016.7"  alt="3"></a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" id="btn-5" title="未完待续"  alt="3"></a>
                   </li>
               </ul>
               <div class="swiper-button-prev"></div>
@@ -223,7 +249,7 @@
       </div>
 
     </div>
-    <div class="wrapper Social clr">
+    <div class="wrapper Social clr  wrapper-js">
       <div class="block WeChat">
         <div class="LOGO-box">
           <div class="LOGO"></div>
