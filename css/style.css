@@ -494,21 +494,26 @@ transform:rotate(360deg);
   border-radius: 50%;
 }
 .Exp-btn li{
-  width: 25%;
+  width: 20%;
   float: left;
 }
 .on-btn a{
   background: #fff !important;
 }
 .shangcheng{
-  background: rgba(0,0,0,.1) url(../img/bg1.png) no-repeat;
-  background-position: 500px 0;
+  background: rgba(0,0,0,.1) url(../img/bg1.png) no-repeat right;
+
   background-size:contain;
 }
 .laobanlai{
-  background: rgba(0,0,0,.1) url(../img/bg2.png) no-repeat;
-  background-position: 500px 0;
+  background: rgba(0,0,0,.1) url(../img/bg2.png) no-repeat right;
+
   background-size:contain;
+}
+.laobanlai-manage{
+  background: rgba(0,0,0,.1) url(../img/bg4.png) no-repeat right;
+
+  background-size:450px;
 }
 .xiaomage{
   background: rgba(0,0,0,.1) url(../img/bg3.png) no-repeat right;

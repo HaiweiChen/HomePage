@@ -1,10 +1,12 @@
 // JavaScript Document
 var body=$('body');
+
 $('.menu a').click(function(){
 	$(this).addClass('menu-on').siblings().removeClass('menu-on');
-	$('.wrapper,.LOGO-wrapper').hide()
-	var text = $(this).text();
-	$('.'+text).show();
+	var text = $(this).text();//nav名称
+	//该菜单指向的部分显示，其他部分隐藏
+	$('.'+text).show().siblings('.wrapper-js').hide();
+	//页面切换时，改变背景颜色
 	if(text=="Home"){
 		body.css('background','#90B44B');
 	}else if(text=='Social'){
@@ -42,7 +44,7 @@ var mySwiper = new Swiper('.right-block', {
 	}
 });
 //项目经验
-var Swiper = new Swiper('.Experience', {
+var projectSwiper = new Swiper('.Experience', {
 	// pagination: '.swiper-pagination',
 	// paginationClickable: true,
 	prevButton:'.swiper-button-prev',
@@ -52,7 +54,8 @@ var Swiper = new Swiper('.Experience', {
 	noSwiping : true,
 	noSwipingClass : 'stop-swiping',
 	onSlideChangeStart: function(swiper){
-		var index=Swiper.activeIndex;
+		var index=projectSwiper.activeIndex;
+		console.log(index);
 		$('.Exp-btn li').eq(index).addClass('on-btn').siblings().removeClass('on-btn');
 	}
 });
@@ -60,16 +63,19 @@ var Swiper = new Swiper('.Experience', {
 	$(this).parent().addClass('on-btn').siblings().removeClass('on-btn');
 });
 $('#btn-1').click(function(){
-	Swiper.slideTo(0, 1000, false);
+	projectSwiper.slideTo(0, 1000, false);
 });
 $('#btn-2').click(function(){
-	Swiper.slideTo(1, 1000, false);
+	projectSwiper.slideTo(1, 1000, false);
 });
 $('#btn-3').click(function(){
-	Swiper.slideTo(2, 1000, false);
+	projectSwiper.slideTo(2, 1000, false);
 });
 $('#btn-4').click(function(){
-	Swiper.slideTo(3, 1000, false);
+	projectSwiper.slideTo(3, 1000, false);
+});
+$('#btn-5').click(function(){
+	projectSwiper.slideTo(4, 1000, false);
 });
 //进度条
 $('.rel-strip').each(function(){
